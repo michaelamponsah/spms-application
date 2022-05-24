@@ -1,0 +1,15 @@
+.nav__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.3em 0;
+  font-size: 1.2rem;
+  color: #5f6469;
+  background-color: #fefefe;
+}
+.nav__left {
+  margin-left: 1em;
+}
+.nav__right {
+  margin-right: 1em;
+}

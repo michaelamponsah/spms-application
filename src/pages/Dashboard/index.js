@@ -1,9 +1,13 @@
-import React from 'react'
+import React from "react";
+import SideNavigation from "../../components/SideNavigation";
+import classes from "./style.module.css";
 
 const Dashboard = () => {
   return (
-    <div>Dashboard</div>
-  )
-}
+    <section className={classes.dashboard}>
+      <SideNavigation />
+    </section>
+  );
+};
 
-export default Dashboard
+export default Dashboard;

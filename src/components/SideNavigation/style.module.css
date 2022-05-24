@@ -1,0 +1,17 @@
+.aside__wrapper {
+  background-color: #fefefe;
+  color: #0f0f0f;
+  width: 20%;
+  border-radius: 0.31rem;
+  padding: 3em 0;
+  margin-top: 3em;
+}
+.nav__list {
+  list-style-type: none;
+}
+.nav__item {
+  padding: 1em 0;
+}
+/* .side__nav--item-wrapper{
+  margin-top: 0.25em;
+} */
