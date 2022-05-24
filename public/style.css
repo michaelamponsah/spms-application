@@ -1,0 +1,60 @@
+/*
+-------------------------
+RESET | OVERRIDES 
+-------------------------
+*/
+
+/* Box-sizing */
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+/* Reset Margins*/
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure {
+  margin: 0;
+}
+
+/* Setup the body */
+body {
+  line-height: 1.5;
+  min-height: 100vh;
+  font-size: 1.3rem;
+}
+
+/* Make form elements easier to work with*/
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+/*
+-------------------------
+UTILITY CLASSES
+-------------------------
+*/
+
+.flex {
+  display: flex;
+  gap: var(--gap, 1rem);
+}
+.grid {
+  display: grid;
+  gap: var(--gap, 1rem);
+}
+.container {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 0 2em;
+}
