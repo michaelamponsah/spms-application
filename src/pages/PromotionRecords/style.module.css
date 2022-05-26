@@ -1,0 +1,11 @@
+.title {
+  color: gray;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-left: 8rem;
+  margin-top: 4rem;
+}
+
+.content__area{
+    background-color: #fefefe;
+    width: 100%;
+}
