@@ -1,9 +1,9 @@
 import React from 'react'
 
-const LetterReceivedPage = () => {
+const LettersReceivedPage = () => {
   return (
     <div>LetterReceivedPage</div>
   )
 }
 
-export default LetterReceivedPage
+export default LettersReceivedPage

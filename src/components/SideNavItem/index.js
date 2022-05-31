@@ -1,7 +1,8 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import classes from "./style.module.css";
 
-const SideNavItem = ({ title, icon }) => {
+const SideNavItem = ({ title, icon, navUrl }) => {
   return (
     <li
       className={[
@@ -10,11 +11,11 @@ const SideNavItem = ({ title, icon }) => {
       ]}
     >
       <div className={classes["icon__wrapper"]}>
-        <span class="material-symbols-outlined">{icon}</span>
+        <span className="material-symbols-outlined">{icon}</span>
       </div>
-      <a href="#" className={classes["nav__link"]}>
+      <Link to={`/${navUrl}`} className={classes["nav__link"]}>
         {title}
-      </a>
+      </Link>
     </li>
   );
 };

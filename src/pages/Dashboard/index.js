@@ -6,8 +6,7 @@ import classes from "./style.module.css";
 const Dashboard = () => {
   return (
     <section className={classes.dashboard}>
-      <SideNavigation />
-      <PromotionRecordsPage />
+     <h1>Dashboard</h1>
     </section>
   );
 };
