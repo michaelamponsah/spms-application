@@ -1,15 +1,13 @@
-
 .aside__wrapper {
   font-size: 1.2rem;
   background-color: #fefefe;
   color: #0f0f0f;
   width: 20%;
-  border-radius: 0.31rem;
   margin-top: 2em;
   align-self: flex-start;
 }
 .nav__list {
   list-style-type: none;
   padding: 1em;
+  width: 100%;
 }
-

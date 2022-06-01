@@ -11,9 +11,9 @@ const SideNavItem = ({ title, icon, navUrl }) => {
       ]}
     >
       <div className={classes["icon__wrapper"]}>
-        <span className="material-symbols-outlined">{icon}</span>
+        <span className={`material-symbols-outlined text-dark`}>{icon}</span>
       </div>
-      <Link to={`/${navUrl}`} className={classes["nav__link"]}>
+      <Link to={`/${navUrl}`} className={`${classes["nav__link"]} text-white text-small`}>
         {title}
       </Link>
     </li>

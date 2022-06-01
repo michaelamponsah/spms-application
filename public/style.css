@@ -32,6 +32,7 @@ body {
   min-height: 100vh;
   font-size: 1.3rem;
   background-color: #f5f5f5;
+  font-family: "Roboto", sans-serif;
 }
 
 /* Make form elements easier to work with*/
@@ -61,7 +62,36 @@ UTILITY CLASSES
   margin: 0 auto;
   padding: 0 2em;
 }
+
+.border-radius {
+  border-radius: 0.31rem;
+}
+.shadow {
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+}
+
+/* Colors */
 .bg-white {
   background-color: #fefefe;
 }
+.bg-blue {
+  background-color: #0077ef !important;
+}
+.bg-dark {
+  background-color: #283747 !important;
+}
+.text-white {
+  color: #ffffff;
+}
 
+.text-dark {
+  color: #283747;
+}
+.color-gold {
+  color: #ffc300;
+}
+
+/* Font sizes */
+.text-small {
+  font-size: 1.025rem;
+}

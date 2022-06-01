@@ -3,7 +3,7 @@ import SideNavItem from "../SideNavItem";
 import classes from "./style.module.css";
 const SideNavigation = () => {
   return (
-    <aside className={classes["aside__wrapper"]}>
+    <aside className={`${classes["aside__wrapper"]} border-radius shadow bg-blue`}>
       <nav>
         <ul className={classes["nav__list"]}>
           <SideNavItem title="Dashboard" navUrl="" icon="dashboard" />

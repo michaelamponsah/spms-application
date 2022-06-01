@@ -9,7 +9,6 @@ import LettersWorkedOnPage from "./pages/LettersWorkedOn";
 import LettersSeenByDeanPage from "./pages/LettersSeenByDean";
 import Dashboard from "./pages/Dashboard";
 import MainArea from "./components/MainArea";
-import Layout from "./components/Layout";
 import Reservations from "./pages/Reservations";
 
 function App() {

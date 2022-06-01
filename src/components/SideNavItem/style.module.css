@@ -1,5 +1,12 @@
 .nav__item {
   margin-top: 0.5em;
+  padding: 0.2em;
+}
+.nav__item:hover {
+  background-color: rgba(24, 78, 133, 0.25);
+  padding: 0.2em;
+  width: 100%;
+  cursor: pointer;
 }
 .nav__item--wrapper {
   display: flex;
@@ -7,12 +14,18 @@
 }
 .icon__wrapper {
   display: inline-block;
-  padding-right: 0.5em;
+  margin: 0 0.5em;
+  padding: 0.31em;
+  border-radius: 50%;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .nav__link {
   text-decoration: none;
   align-self: center;
 }
 .nav__link:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
