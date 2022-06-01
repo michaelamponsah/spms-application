@@ -9,24 +9,68 @@ import LettersWorkedOnPage from "./pages/LettersWorkedOn";
 import LettersSeenByDeanPage from "./pages/LettersSeenByDean";
 import Dashboard from "./pages/Dashboard";
 import MainArea from "./components/MainArea";
+import Layout from "./components/Layout";
+import Reservations from "./pages/Reservations";
 
 function App() {
+  const routes = [
+    {
+      path: "/",
+      component: <Dashboard />,
+      exact: true,
+      index: "1",
+    },
+    {
+      path: "/file-indexes",
+      component: <FileIndexesPage />,
+      index: "2",
+    },
+    {
+      path: "/promotion-records",
+      component: <PromotionRecordsPage />,
+      index: "3",
+    },
+    {
+      path: "/letters-received",
+      component: <LettersReceivedPage />,
+      index: "4",
+    },
+    {
+      path: "/letters-worked-on",
+      component: <LettersWorkedOnPage />,
+      index: "5",
+    },
+    {
+      path: "/letters-seen",
+      component: <LettersSeenByDeanPage />,
+      index: "6",
+    },
+    {
+      path: "/reservations",
+      component: <Reservations />,
+      index: "7",
+    },
+  ];
+
   return (
     <div className="App">
       <BrowserRouter>
         <NavBar />
-
-        <SideNavigation />
-        <MainArea content={<Dashboard />} />
-        
-        <Routes>
-          <Route exact path="/" component={Dashboard} />
-          <Route path="/file-indexes" component={FileIndexesPage} />
-          <Route path="/promotion-records" component={PromotionRecordsPage} />
-          <Route path="/letters-received" component={LettersReceivedPage} />
-          <Route path="/letters-worked-on" component={LettersWorkedOnPage} />
-          <Route path="/letters-seen" component={LettersSeenByDeanPage} />
-        </Routes>
+        <div className="container">
+          <div className="flex">
+            <SideNavigation />
+            <Routes>
+              {routes.map((route) => (
+                <Route
+                  exact={route.exact}
+                  path={route.path}
+                  key={route.index}
+                  element={<MainArea content={route.component} />}
+                />
+              ))}
+            </Routes>
+          </div>
+        </div>
       </BrowserRouter>
     </div>
   );

@@ -1,18 +1,18 @@
-.nav__item--wrapper{
+.nav__item {
+  margin-top: 0.5em;
+}
+.nav__item--wrapper {
   display: flex;
   align-items: center;
 }
-.icon__wrapper{
+.icon__wrapper {
   display: inline-block;
   padding-right: 0.5em;
 }
-.nav__link{
+.nav__link {
   text-decoration: none;
   align-self: center;
 }
-.nav__link:hover{
+.nav__link:hover {
   text-decoration: underline;
-}
-.nav__item{
-  margin-top: 0.6em;
 }

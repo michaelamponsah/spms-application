@@ -57,7 +57,11 @@ UTILITY CLASSES
   gap: var(--gap, 1rem);
 }
 .container {
-  max-width: 80rem;
+  max-width: 90rem;
   margin: 0 auto;
   padding: 0 2em;
 }
+.bg-white {
+  background-color: #fefefe;
+}
+
