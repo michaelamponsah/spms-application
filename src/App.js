@@ -10,6 +10,7 @@ import LettersSeenByDeanPage from "./pages/LettersSeenByDean";
 import Dashboard from "./pages/Dashboard";
 import MainArea from "./components/MainArea";
 import Reservations from "./pages/Reservations";
+import AddApplicant from "./pages/AddApplicant";
 
 function App() {
   const routes = [
@@ -48,6 +49,11 @@ function App() {
       path: "/reservations",
       component: <Reservations />,
       index: "7",
+    },
+    {
+      path: "/promotion-records/add-applicant",
+      component: <AddApplicant />,
+      index: "8",
     },
   ];
 
